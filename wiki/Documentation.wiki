@@ -3,7 +3,9 @@
 <wiki:toc max_depth="3" />
 
 = Getting Start =
-
+As the expanding use of grammatical inference, we provide this open source site for those who are interested at GI algorithms.
+We've implemented some algorithms in Matlab. In order to use the source we provide, you need at least a legal copy of Matlab.
+If you don't know what is Matlab, please refer [http://www.mathworks.com/products/matlab/ here] to get more information about it.
 = Installation =
 
 = How TO =
