@@ -1,15 +1,18 @@
 #summary Online help of project gitoolbox.
 
 = Table Of Content =
- * Getting Start
- * Installation
- * How TO
- * Function API 
- * Reference
+ * [WikiSyntax Getting_Start]
+ * [WikiSyntax Installation]
+ * [WikiSyntax How_TO]
+ * [WikiSyntax Functions] 
+ * [WikiSyntax Reference]
 
-= Details =
+= Getting Start =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+= Installation =
+
+= How TO =
+
+= Functions =
+
+= Reference =
