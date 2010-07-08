@@ -7,7 +7,8 @@ As the expanding use of grammatical inference, we provide this open source site 
 We've implemented some algorithms in Matlab. In order to use the source we provide, you need at least a legal copy of Matlab.
 If you don't know what is Matlab, please refer [http://www.mathworks.com/products/matlab/ here] to get more information about it.
 = Installation =
-
+ # Download source code from our [Downloads] page
+ # Extract compressed package
 = How TO =
 
 = Functions =
