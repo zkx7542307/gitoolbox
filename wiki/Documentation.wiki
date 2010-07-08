@@ -2,12 +2,12 @@
 
 <wiki:toc max_depth="3" />
 
-== Getting Start ==
+= Getting Start =
 
-== Installation ==
+= Installation =
 
-== How TO ==
+= How TO =
 
-== Functions ==
+= Functions =
 
-== Reference ==
+= Reference =
