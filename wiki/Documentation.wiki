@@ -6,11 +6,12 @@
 As the expanding use of grammatical inference, we provide this open source site for those who are interested at GI algorithms.
 We've implemented some algorithms in Matlab. In order to use the source we provide, you need at least a legal copy of Matlab.
 If you don't know what is Matlab, please refer [http://www.mathworks.com/products/matlab/ here] to get more information about it.
-= Installation =
- # Download source code from our [Downloads] page
- # Extract compressed package
-= How TO =
-
+= How To =
+ # Download source code from our [downloads downloads] page.
+ # Extract downloaded package and place it anywhere you want.
+ # Run Matlab and switch to the root directory of the source.
+ # call functions in command line or in your own code.
+ # For details of functions, please turn to our [GIAPI online help] of Function APIs .
 = Functions =
 
 = Reference =
