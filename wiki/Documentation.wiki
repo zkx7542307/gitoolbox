@@ -1,7 +1,7 @@
 #summary Online help of project gitoolbox.
 
 = Table Of Content =
- * [WikiSyntax Getting_Start]
+ * [WikiSyntax#Getting_Start]
  * [WikiSyntax Installation]
  * [WikiSyntax How_TO]
  * [WikiSyntax Functions] 
