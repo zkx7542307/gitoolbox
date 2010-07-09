@@ -1,4 +1,5 @@
 #summary Online help of project gitoolbox.
+#labels Featured
 
 <wiki:toc max_depth="3" />
 
