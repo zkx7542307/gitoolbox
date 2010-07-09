@@ -23,7 +23,7 @@
 % on it. The user must assume the entire risk of using the source code.
 % 
 % -------------------------------------------------
-% Here defines the data structure of K Language
+% Here defines the data structure of K-testable language
 
 classdef KSET
 

@@ -1,6 +1,6 @@
 clear;
 clc;
-fo = fopen('k_testable_result_200.txt', 'w+');
+fo = fopen('k_testable_result_500.txt', 'w+');
     
    for k = [2 3 5 10]
      
@@ -9,14 +9,14 @@ fo = fopen('k_testable_result_200.txt', 'w+');
     fprintf(fo, '%g', k);
     fprintf(fo, '\n');
     x = cputime;
-     kset = KBuilder('./200.txt', k);
-     dfa = K2dfa(kset);
+     %kset = KBuilder('./200.txt', k);
+     dfa = K2dfa('./500.txt', k);
     y =  cputime - x
     fprintf(fo, 'time: ');
     fprintf(fo, '%g', y);
     fprintf(fo, '\n');
     fi = fopen('negative.txt', 'r');
-    fi2 = fopen('200_test.txt', 'r');
+    fi2 = fopen('500_test.txt', 'r');
     startindex = 0;
     fpos = 0;
     tneg = 0;
