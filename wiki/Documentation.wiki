@@ -17,5 +17,5 @@ If you don't know what is Matlab, please refer [http://www.mathworks.com/product
  * *July.08.2010*
   * Currently we published the beta version 1.1
 = Reference =
- * Akram, Hasan Ibne, Colin de la Higuera, Huang Xiao, and Claudia Eckert. *Grammatical Inference Algorithms in MATLAB*. In ICGI 2010: Proceedings of the 10th International Colloquium on Grammatical Inference, Valencia, Spain, 2010. Springer-Verlag. [To appear]
+ * Akram, Hasan Ibne, Colin de la Higuera, Huang Xiao, and Claudia Eckert. *Grammatical Inference Algorithms in MATLAB*. In ICGI 2010: Proceedings of the 10th International Colloquium on Grammatical Inference, Valencia, Spain, 2010. Springer-Verlag. 
  * de la Higuera, C.: *Grammatical Inference: Learning Automata and Grammars*. Cambridge University Press (2010)
