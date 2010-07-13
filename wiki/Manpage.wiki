@@ -9,8 +9,12 @@ grammatical inference and of cause any intention to join us is warmly welcome.
 
 == Preliminary ==
 In order to use the toolbox, you need at least a legal copy of Matlab, you can get more information 
-from [http://www.mathworks.com/products/matlab/ here].
-
- === Definitions ===
- === Data Structure ===
- === Format of Data Sample ===
+from [http://www.mathworks.com/products/matlab/ here]. Since we presume that users who're about
+to use our toolbox already have some basic knowledge of grammatical inference, so we're not going to 
+spend time on giving any theoretical tutorial. But you have to understand following issues so that you 
+can make full use of the toolbox:
+ * Data Structure of DFA
+{{{
+     We defined in matlab such a data structure for DFA:
+     
+}}} 
