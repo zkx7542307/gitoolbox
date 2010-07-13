@@ -1,0 +1,11 @@
+#sidebar UserGuideBar
+
+=== KBuilder ====
+rpni intro goes here
+=== syntax ===
+syntax of rpni...
+=== Description ===
+description of rpni..
+=== Examples ===
+some examples
+=== See Also ===
