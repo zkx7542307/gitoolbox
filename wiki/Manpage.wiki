@@ -60,7 +60,7 @@ In order to make your program runnable, you should follow the format of input sa
     The header line indicates the total number of samples (here is 6) and the number of different alphabets (here is 2). 
     Then each line represents a sample, the first bit of which indicate if it's positive sample (1) or negative (0), the second bit
     indicates the length of the sample and following is the real sample string.
- * For KTestable which requires only positive sample, the input data should look like this:
+ * For *[KTestableDoc K-Testable]* which requires only positive sample, the input data should look like this:
 {{{
     abb
     aac
