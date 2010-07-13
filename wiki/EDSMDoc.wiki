@@ -6,5 +6,9 @@
 EDSM intro goes here...
 
 = Function List =
-
-function list goes here...
+We've implemented following functions for RPNI:
+ * [EDSM EDSM]
+ * [EDSMCount EDSM_Count]
+ * [EDSMFold EDSM_FOLD]
+ * [EDSMMerge EDSM_MERGE]
+ * [EDSMPromote EDSM_PROMOTE]
