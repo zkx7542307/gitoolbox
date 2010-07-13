@@ -11,8 +11,7 @@ grammatical inference and of cause any intention to join us is warmly welcome.
 In order to use the toolbox, you need at least a legal copy of Matlab, you can get more information 
 from [http://www.mathworks.com/products/matlab/ here]. Since we presume that users who're about
 to use our toolbox already have some basic knowledge of grammatical inference, so we're not going to 
-spend time on giving any theoretical tutorial. But you have to understand following issues so that you 
-can make full use of the toolbox:
+spend time on giving any theoretical tutorial. 
 === Data Structure of DFA ===
 {{{
      A DFA contains 6 sets:
@@ -29,3 +28,31 @@ can make full use of the toolbox:
      FinalRejectStates
         The rejecting states
 }}} 
+
+=== Data Structure of KSET ===
+{{{
+    A KSET contains 5 sets:
+    Alphabets
+        The set of alphabets
+    ISET
+        Prefixes of length k-1 and suffixes (or finals) of length k-1   
+    CSET
+        Short strings with length < k
+    FSET
+        Prefixes of length k-1 and suffixes (or finals) of length k-1
+    TSET
+        Allowed segments
+}}}
+
+=== Data Input Format ===
+In order to make your program runnable, you should follow the format of input sample.
+ * For RPNI and EDSM which require both positive and negative sample
+{{{
+    6 2
+    1 1 a
+    1 2 a a a
+    1 3 b b a
+    1 4 a b a b
+    0 2 a b
+    0 2 b b
+}}}
