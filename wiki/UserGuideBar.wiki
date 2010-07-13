@@ -1,4 +1,4 @@
-= User Guide = 
+  * [http://code.google.com/p/gitoolbox/ Home] 
   * [Documentation Documentation]
   * [Function Reference]
    * [RPNI RPNI]
