@@ -1,6 +1,3 @@
 #summary User guide of GI-Toolbox.
 #labels Featured
-#sidebar Overview
- * RPNI
- * EDSM
- * Ktestable
+#sidebar UserGuideBar
