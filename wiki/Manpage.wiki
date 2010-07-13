@@ -13,8 +13,19 @@ from [http://www.mathworks.com/products/matlab/ here]. Since we presume that use
 to use our toolbox already have some basic knowledge of grammatical inference, so we're not going to 
 spend time on giving any theoretical tutorial. But you have to understand following issues so that you 
 can make full use of the toolbox:
- * Data Structure of DFA
+=== Data Structure of DFA ===
 {{{
-     We defined in matlab such a data structure for DFA:
-     
+     A *DFA* contains 6 sets:
+     * FiniteSetOfStates  
+        FiniteSetOfStates is the set of finite states donated as Q
+     * Alphabets
+        The set of alphabets
+     * TransitionMatrix
+        The state transition matrix.
+     * InitialState
+        The set of initial states
+     * FinalAcceptStates
+        The set of final accepting states
+     * FinalRejectStates
+        The rejecting states
 }}} 
