@@ -1,3 +1,10 @@
-#summary User guide of GI-Toolbox.
+#summary User Guide of GI-Toolbox.
 #labels Featured
 #sidebar UserGuideBar
+== About GI-Toolbox ==
+
+== Preliminary ==
+
+=== Definitions ===
+=== Data Structure ===
+=== Format of Data Sample ===
