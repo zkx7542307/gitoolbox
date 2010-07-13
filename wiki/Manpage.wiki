@@ -2,9 +2,15 @@
 #labels Featured
 #sidebar UserGuideBar
 == About GI-Toolbox ==
+We gave GI-Toolbox's birth since June in 2010. Our goal is simple. We are aiming to provide 
+users a robust and effective toolbox for grammatical inference. We'll try our best to contribute
+to this field as much as we can. We hope that our project can invoke more people's interest on 
+grammatical inference and of cause any intention to join us is warmly welcome.
 
 == Preliminary ==
+In order to use the toolbox, you need at least a legal copy of Matlab, you can get more information 
+from [http://www.mathworks.com/products/matlab/ here].
 
-=== Definitions ===
-=== Data Structure ===
-=== Format of Data Sample ===
+ === Definitions ===
+ === Data Structure ===
+ === Format of Data Sample ===
