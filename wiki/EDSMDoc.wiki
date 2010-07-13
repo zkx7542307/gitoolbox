@@ -1,0 +1,10 @@
+#summary EDSM sub-manpage.
+#sidebar UserGuideBar
+
+= Introduction =
+
+EDSM intro goes here...
+
+= Function List =
+
+function list goes here...
