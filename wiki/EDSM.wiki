@@ -1,4 +1,5 @@
 #summary EDSM sub-manpage.
+#sidebar UserGuideBar
 
 = Introduction =
 
