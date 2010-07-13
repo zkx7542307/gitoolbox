@@ -9,7 +9,7 @@ target DFA is produced. For the details of RPNI please consult chapter 12 of [Do
 
 = Function List =
 We've implemented following functions for RPNI:
- * [RPNIMain RPNI]
+ * [RPNI RPNI]
  * [RPNICompatible RPNI_COMPATIBLE]
  * [RPNIFold RPNI_FOLD]
  * [RPNIMerge RPNI_MERGE]
