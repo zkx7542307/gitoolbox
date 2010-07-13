@@ -1,9 +1,11 @@
 #sidebar UserGuideBar
 
-=== K2dfa ===
-
-=== Syntax ===
-
+=== K2dfa ====
+rpni intro goes here
+=== syntax ===
+syntax of rpni...
 === Description ===
-
+description of rpni..
 === Examples ===
+some examples
+=== See Also ===
