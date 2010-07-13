@@ -12,7 +12,7 @@ If you don't know what is Matlab, please refer [http://www.mathworks.com/product
  # Extract downloaded package and place it anywhere you want.
  # Run Matlab and switch to the root directory of the source.
  # call functions in command line or in your own code.
- # For details of functions, please turn to our [GI-Toolbox_Manpage online help] of Function APIs .
+ # For details of functions, please turn to our [Manpage online help] of Function APIs .
 = Change List =
  * *July.13.2010*
   * Currently we published the beta version 1.1
