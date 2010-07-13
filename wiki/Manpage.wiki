@@ -46,7 +46,8 @@ spend time on giving any theoretical tutorial.
 
 === Data Input Format ===
 In order to make your program runnable, you should follow the format of input sample.
- * For RPNI and EDSM which require both positive and negative sample
+ * For *[RPNIDoc RPNI]* and *[EDSMDoc EDSM]* which require both positive and negative sample,
+    The input data should look like this:
 {{{
     6 2
     1 1 a
@@ -56,3 +57,15 @@ In order to make your program runnable, you should follow the format of input sa
     0 2 a b
     0 2 b b
 }}}
+    The header line indicates the total number of samples (here is 6) and the number of different alphabets (here is 2). 
+    Then each line represents a sample, the first bit of which indicate if it's positive sample (1) or negative (0), the second bit
+    indicates the length of the sample and following is the real sample string.
+ * For KTestable which requires only positive sample, the input data should look like this:
+{{{
+    abb
+    aac
+    abba
+    abbbba
+    ccdd
+}}}     
+    The data format for KTestable is much more simple. Each line corresponds to a positive sample.
