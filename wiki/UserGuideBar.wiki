@@ -1,6 +1,6 @@
   * [http://code.google.com/p/gitoolbox/ Home] 
   * [Documentation Documentation]
-  * [Function Reference]
+  * [Manpage Function Reference]
    * [RPNI RPNI]
    * [EDSM EDSM]
    * [KTestable K-Testable]
