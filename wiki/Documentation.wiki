@@ -8,13 +8,13 @@ As the expanding use of grammatical inference, we provide this open source site 
 We've implemented some algorithms in Matlab. In order to use the source we provide, you need at least a legal copy of Matlab.
 If you don't know what is Matlab, please refer [http://www.mathworks.com/products/matlab/ here] to get more information about it.
 = How To =
- # Download source code from our [downloads downloads] page.
+ # Download source code from home page of our project.
  # Extract downloaded package and place it anywhere you want.
  # Run Matlab and switch to the root directory of the source.
  # call functions in command line or in your own code.
  # For details of functions, please turn to our [GIAPI online help] of Function APIs .
 = Change List =
- * *July.08.2010*
+ * *July.13.2010*
   * Currently we published the beta version 1.1
 = Reference =
  * Akram, Hasan Ibne, Colin de la Higuera, Huang Xiao, and Claudia Eckert. *Grammatical Inference Algorithms in MATLAB*. In ICGI 2010: Proceedings of the 10th International Colloquium on Grammatical Inference, Valencia, Spain, 2010. Springer-Verlag. 
