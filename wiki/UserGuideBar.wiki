@@ -12,5 +12,13 @@
      * [RPNIMerge RPNI_MERGE]
      * [RPNIPromote RPNI_PROMOTE]
    * [EDSMDoc EDSM]
+     * [EDSM EDSM]
+     * [EDSMCount EDSM_Count]
+     * [EDSMFold EDSM_FOLD]
+     * [EDSMMerge EDSM_MERGE]
+     * [EDSMPromote EDSM_PROMOTE]
    * [KTestableDoc K-Testable]
+     * [K2dfa  K2dfa]
+     * [KSET KSET]
+     * [KBuilder KBuilder]
  
