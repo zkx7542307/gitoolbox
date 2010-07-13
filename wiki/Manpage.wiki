@@ -69,3 +69,14 @@ In order to make your program runnable, you should follow the format of input sa
     ccdd
 }}}     
     The data format for KTestable is much more simple. Each line corresponds to a positive sample.
+== A Simple Example ==
+After downloading the toolbox, extract to any place you want and switch to the root folder in Matlab. Assume that you have a 
+sample file _"input.txt"_ formated as above for RPNI, open the command line window in Matlab and type:
+{{{
+[training, group, positive, negative] = ReadSamples('input.txt');
+}}}
+And then type:
+{{{
+dfa = RPNI(positive, negative)
+}}}
+Now you got a dfa learned from sample _"input.txt"_
