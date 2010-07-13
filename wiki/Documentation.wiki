@@ -1,6 +1,6 @@
 #summary Online help of project gitoolbox.
 #labels Featured
-
+#sidebar UserGuideBar
 <wiki:toc max_depth="3" />
 
 = Getting Start =
