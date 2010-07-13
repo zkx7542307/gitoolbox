@@ -83,4 +83,4 @@ dfa = RPNI(positive, negative)
 Now you got a *DFA* learned from sample _"input.txt"_
 More instructions can be found on the left.
 
-[Manpage#About_GI-Toolbox To the Top]
+[Manpage#About_GI-Toolbox [To the Top]]
