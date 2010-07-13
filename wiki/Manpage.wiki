@@ -15,17 +15,17 @@ spend time on giving any theoretical tutorial. But you have to understand follow
 can make full use of the toolbox:
 === Data Structure of DFA ===
 {{{
-     A *DFA* contains 6 sets:
-     * FiniteSetOfStates  
+     A DFA contains 6 sets:
+     FiniteSetOfStates  
         FiniteSetOfStates is the set of finite states donated as Q
-     * Alphabets
+     Alphabets
         The set of alphabets
-     * TransitionMatrix
+     TransitionMatrix
         The state transition matrix.
-     * InitialState
+     InitialState
         The set of initial states
-     * FinalAcceptStates
+     FinalAcceptStates
         The set of final accepting states
-     * FinalRejectStates
+     FinalRejectStates
         The rejecting states
 }}} 
