@@ -9,12 +9,14 @@ RPNI starts from creating PTA according to positive samples. Initialize
 RED state set and BLUE state set as following:
  1. set start state as RED state and add it to RED set.
  2. add all the successors of start state to BLUE set.
-After initialization, RPNI starts to extract each BLUE state and merge it for each RED state. 
-After each Merge, we examine the new merged DFA if it
+After initialization, RPNI starts to extract each BLUE state and merge it 
+for each RED state. After each Merge, we examine the new merged DFA if it
 accepts any negative sample, 
- 1. if it does, abandon such DFA and promote currently manipulated BLUE state and continue another Merge.
- 2. if it does not accpet any negative sample, update DFA and add all the red states' successors which are not 
-BLUE states to BLUE set. Until there's no BLUE state for Merge.
+ 1. if it does, abandon such DFA and promote currently manipulated BLUE 
+state and continue another Merge.
+ 2. if it does not accpet any negative sample, update DFA and add all the red 
+states' successors which are not BLUE states to BLUE set. Until there's no BLUE
+state for Merge.
 === Examples ===
 some examples
 === See Also ===
