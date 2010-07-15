@@ -5,18 +5,18 @@ Regular Positive and Negative Inference
 === syntax ===
 dfa = RPNI(positive, negative)
 === Description ===
-RPNI starts from creating PTA according to positive samples. Initialize
-RED state set and BLUE state set as following:
- 1. set start state as RED state and add it to RED set.
- 2. add all the successors of start state to BLUE set.
-After initialization, RPNI starts to extract each BLUE state and merge it 
-for each RED state. After each Merge, we examine the new merged DFA if it
-accepts any negative sample, 
- 1. if it does, abandon such DFA and promote currently manipulated BLUE 
-state and continue another Merge.
- 2. if it does not accpet any negative sample, update DFA and add all the red 
-states' successors which are not BLUE states to BLUE set. Until there's no BLUE
-state for Merge.
+RPNI starts from creating PTA according to positive samples. Initialize<br>
+RED state set and BLUE state set as following:<br>
+ 1. set start state as RED state and add it to RED set.<br>
+ 2. add all the successors of start state to BLUE set.<br>
+After initialization, RPNI starts to extract each BLUE state and merge it for <br>
+each RED state. After each Merge, we examine the new merged DFA if it<br>
+accepts any negative sample, <br>
+ 1. if it does, abandon such DFA and promote currently manipulated BLUE <br>
+     state and continue another Merge.<br>
+ 2. if it does not accpet any negative sample, update DFA and add all the red <br>
+     states' successors which are not BLUE states to BLUE set. Until there's no <br>
+     BLUE state for Merge.<br>
 === Examples ===
 some examples
 === See Also ===
