@@ -1,6 +1,6 @@
 #sidebar UserGuideBar
 
-=== RPNI ====
+<font color='red'><h2> RPNI </h2></font>
 Regular Positive and Negative Inference
 === syntax ===
 dfa = RPNI(positive, negative)
@@ -12,11 +12,10 @@ RED state set and BLUE state set as following:
 After initialization, RPNI starts to extract each BLUE state and merge it for <br>
 each RED state. After each Merge, we examine the new merged DFA if it<br>
 accepts any negative sample,
- * if it does, abandon such DFA and promote currently manipulated BLUE
- state and continue another Merge.
- * if it does not accpet any negative sample, update DFA and add all the red
- states' successors which are not BLUE states to BLUE set. Until there's no
- BLUE state for Merge.
+ * if it does, abandon such DFA and promote currently manipulated BLUE state
+and continue another Merge.
+ * if it does not accpet any negative sample, update DFA and add all the red states' 
+successors which are not BLUE states to BLUE set. Until there's no BLUE state for Merge.
 === Examples ===
 some examples
 === See Also ===
