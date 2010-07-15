@@ -1,7 +1,7 @@
 #sidebar UserGuideBar
 
 === EDSM ====
-rpni intro goes here
+Evidence driven state merging 
 === syntax ===
 syntax of rpni...
 === Description ===
