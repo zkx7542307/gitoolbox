@@ -14,3 +14,4 @@ flag = RPNI_COMPATIBLE(dfa, negative)
 ans = 1
 }}}
 <font color='B80028'><h2> See Also </h2></font>
+[RPNI RPNI], [RPNIFold RPNI_FOLD], [RPNIMerge RPNI_MERGE], [RPNIPromote RPNI_PROMOTE]
