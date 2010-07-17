@@ -1,10 +1,10 @@
 #sidebar UserGuideBar
 
-<font color='red'><h2> RPNI </h2></font>
+<font color='FF5B00'><h2> RPNI </h2></font>
 Regular Positive and Negative Inference
-=== syntax ===
+<font color='B80028'><h2> syntax </h2></font>
 dfa = RPNI(positive, negative)
-=== Description ===
+<font color='B80028'><h2> Description </h2></font>
 RPNI starts from creating PTA according to positive samples. Initialize RED state set and BLUE state set as following:
  * set start state as RED state and add it to RED set.
  * add all the successors of start state to BLUE set.
@@ -12,7 +12,7 @@ After initialization, RPNI starts to extract each BLUE state and merge it for ea
  * if it does, abandon such DFA and promote currently manipulated BLUE state and continue another Merge.
  * if it does not accpet any negative sample, update DFA and add all the red states' successors which are not BLUE states to BLUE set. Until
 there's no BLUE state for Merge.
-=== Examples ===
+<font color='B80028'><h2> Example </h2></font>
 {{{
 [training, group, positive, negative] = ReadSamples('Data/input3.txt');
 dfa = RPNI(positive, negative);
@@ -75,5 +75,5 @@ ans =
 q_b =
     10
 }}}
-=== See Also ===
+<font color='B80028'><h2> See Also </h2></font>
 [RPNICompatible RPNI_COMPATIBLE], [RPNIFold RPNI_FOLD], [RPNIMerge RPNI_MERGE], [RPNIPromote RPNI_PROMOTE]
