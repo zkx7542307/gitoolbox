@@ -9,5 +9,8 @@ RPNI_COMPATIBLE will take a DFA and S- (the set of negative samples) as inputes 
 if any of the elements of S- is accepted by the DFA. It returns 1 if none of the elements of S- is <br>
 accepted by the DFA and 0 otherwise.
 <font color='B80028'><h2> Example </h2></font>
-some examples
+{{{
+flag = RPNI_COMPATIBLE(dfa, negative)
+return 1
+}}}
 <font color='B80028'><h2> See Also </h2></font>
