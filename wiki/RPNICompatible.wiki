@@ -11,6 +11,6 @@ accepted by the DFA and 0 otherwise.
 <font color='B80028'><h2> Example </h2></font>
 {{{
 flag = RPNI_COMPATIBLE(dfa, negative)
-return 1
+ans = 1
 }}}
 <font color='B80028'><h2> See Also </h2></font>
