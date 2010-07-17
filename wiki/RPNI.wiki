@@ -76,4 +76,4 @@ q_b =
     10
 }}}
 === See Also ===
-[RPNICompatible RPNICOMPATIBLE], [RPNIFold RPNI_FOLD], [RPNIMerge, RPNI_MERGE], [RPNIPromote, RPNI_PROMOTE]
+[RPNICompatible RPNI_COMPATIBLE], [RPNIFold RPNI_FOLD], [RPNIMerge, RPNI_MERGE], [RPNIPromote, RPNI_PROMOTE]
