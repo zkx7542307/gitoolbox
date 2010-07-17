@@ -1,11 +1,11 @@
 #sidebar UserGuideBar
 
-<font color='FF5B00'><h2> RPNI Compatible </h2></font>
-rpni intro goes here
+<font color='FF5B00'><h2> RPNI_Compatible </h2></font>
+Validate the compatibility of intermediate DFA of RPNI
 <font color='B80028'><h2> Syntax </h2></font>
-syntax of rpni...
+flag = RPNI_COMPATIBLE(dfa, S_negative)
 <font color='B80028'><h2> Description </h2></font>
-description of rpni..
+RPNI_COMPATIBLE will take a DFA and S- (the set of negative samples) as inputes and check if any of the elements of S- is accepted by the DFA. It returns 1 if none of the elements of S- is accepted by the DFA and 0 otherwise.
 <font color='B80028'><h2> Example </h2></font>
 some examples
 <font color='B80028'><h2> See Also </h2></font>
