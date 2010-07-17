@@ -1,11 +1,11 @@
 #sidebar UserGuideBar
 
-=== RPNICompatible ====
+<font color='FF5B00'><h2> RPNI Compatible </h2></font>
 rpni intro goes here
-=== syntax ===
+<font color='B80028'><h2> Syntax </h2></font>
 syntax of rpni...
-=== Description ===
+<font color='B80028'><h2> Description </h2></font>
 description of rpni..
-=== Examples ===
+<font color='B80028'><h2> Example </h2></font>
 some examples
-=== See Also ===
+<font color='B80028'><h2> See Also </h2></font>
