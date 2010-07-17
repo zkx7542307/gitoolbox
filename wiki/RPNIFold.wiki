@@ -1,6 +1,6 @@
 #sidebar UserGuideBar
 
-<font color='FF5B00'><h2> RPNI Compatible </h2></font>
+<font color='FF5B00'><h2> RPNI Fold </h2></font>
 rpni intro goes here
 <font color='B80028'><h2> Syntax </h2></font>
 syntax of rpni...
