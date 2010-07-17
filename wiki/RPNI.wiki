@@ -13,5 +13,67 @@ After initialization, RPNI starts to extract each BLUE state and merge it for ea
  * if it does not accpet any negative sample, update DFA and add all the red states' successors which are not BLUE states to BLUE set. Until
 there's no BLUE state for Merge.
 === Examples ===
-some examples
+{{{
+[training, group, positive, negative] = ReadSamples('Data/input3.txt');
+dfa = RPNI(positive, negative);
+
+Bulding PTA....
+Running RPNI on PTA....
+
+dfa = 
+  DFA
+  Properties:
+    FiniteSetOfStates: [1 2 3 4 5 6 7 8 9 10]
+            Alphabets: {'a'  'b'}
+     TransitionMatrix: [10x2 double]
+         InitialState: 1
+    FinalAcceptStates: [1 2 7 9 10]
+    FinalRejectStates: []
+                  RED: 1
+                 BLUE: 3
+  Methods
+merge accepted
+ans =
+     1
+q_b =
+     2
+
+dfa = 
+  DFA
+  Properties:
+    FiniteSetOfStates: [1 2 3 4 5 6 7 8 9 10]
+            Alphabets: {'a'  'b'}
+     TransitionMatrix: [10x2 double]
+         InitialState: 1
+    FinalAcceptStates: [1 2 7 8 9 10]
+    FinalRejectStates: []
+                  RED: [1 3]
+                 BLUE: 8
+  Methods
+
+merge accepted
+
+ans =
+     3
+q_b =
+     6
+dfa = 
+  DFA
+  Properties:
+    FiniteSetOfStates: [1 2 3 4 5 6 7 8 9 10]
+            Alphabets: {'a'  'b'}
+     TransitionMatrix: [10x2 double]
+         InitialState: 1
+    FinalAcceptStates: [1 2 7 8 9 10]
+    FinalRejectStates: []
+                  RED: [1 3 8]
+                 BLUE: [1x0 double]
+  Methods
+merge accepted
+ans =
+     1
+q_b =
+    10
+}}}
 === See Also ===
+[RPNI]
