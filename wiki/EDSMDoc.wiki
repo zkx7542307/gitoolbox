@@ -2,8 +2,10 @@
 #sidebar UserGuideBar
 
 = Introduction =
-
-EDSM intro goes here...
+Evidence driven state merging is also called EDSM for abbreviation. It's another state merging algorithm <br>
+similar with [RPNI RPNI]. The only difference compared with RPNI is that EDSM introduces a count function <br>
+which is used to evaluate the merged dfa, but not like RPNI greedily select the first accepted dfa for the next merge. <br>
+That means EDSM requires more overhead on computing but provide more precise result.
 
 = Function List =
 We've implemented following functions for RPNI:
