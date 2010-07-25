@@ -1,11 +1,18 @@
 #sidebar UserGuideBar
 
 <font color='FF5B00'><h2> RPNI_PROMOTE </h2></font>
-rpni intro goes here
+RPNI Promote
 <font color='B80028'><h2> Syntax </h2></font>
-syntax of rpni...
+[dfa, RED, BLUE] = RPNI_PROMOTE(blue, dfa)
 <font color='B80028'><h2> Description </h2></font>
-description of rpni..
-<font color='B80028'><h2> Example </h2></font>
-some examples
+Basically RPNI_PROMOTE will promote a BLUE state to RED and add additional BLUE states <br>
+to the set BLUE if necessary and return a _dfa_ with update sets of RED and BLUE states. As <br> 
+optional output parameter it will also return the set of RED and the BLUE states. <br>
+<br>
+RPNI_PROMOTE(blue, dfa) needs two parameters:  <br>
+ * _'blue'_ is the to be promoted blue state;  <br>
+ * _'dfa'_ is the DFA of the blue state; <br>
+The blue state will be added to the current set of red states, and then all the existing successors <br>
+of this blue state will be transformed to be blue states which are then added to the set of blue states.
 <font color='B80028'><h2> See Also </h2></font>
+[RPNI RPNI], [RPNICompatible RPNI_COMPATIBLE], [RPNIFold RPNI_FOLD], [RPNIMerge RPNI_MERGE]
