@@ -1,11 +1,23 @@
 #sidebar UserGuideBar
 
 <font color='FF5B00'><h2> RPNI_Fold </h2></font>
-rpni intro goes here
+RPNI Fold
 <font color='B80028'><h2> Syntax </h2></font>
-syntax of rpni...
+dfa = RPNI_FOLD(dfa, q1, q2)
 <font color='B80028'><h2> Description </h2></font>
-description of rpni..
-<font color='B80028'><h2> Example </h2></font>
-some examples
+This method will is a recursive fold function. It takes care of the non determinism of the DFA while merging two states.<br>
+*input:* the dfa, state q1 and q2 to be merged. <br>
+*output:* the updated DFA, where subtree in q2 is folded into q1. <br>
+
+When we start to fold _q2_ into _q1_, we check if _q2_ belongs to final states, if it does, then _q1_ should also be set as a final state.<br>
+For each transition of _q2_: _(q2, a)_ where _a_ from the symbol set, <br>
+1. if there's also a transition of _q1_ with respect to the same symbol  _'a'_ as _q2_, then we start to recursively fold _q2_'s <br>
+transitioned state _(q2, a)_ to _q1_'s transitioned state _(q1, a)_. <br>
+2. if there's no corresponding transition in _q1_, then we delete this transition from _q2_, and meanwhile add it to _q1_. That means:
+{{{
+(q1, a) <- (q2, a)
+}}}
+Delete transition of _q2_ to _(q2, a)_ until there's no possible *RPNI_FOLD* <br>
+*RPNI_FOLD* returns an new DFA.
 <font color='B80028'><h2> See Also </h2></font>
+[RPNI RPNI], [RPNICompatible RPNI_COMPATIBLE], [RPNIMerge RPNI_MERGE], [RPNIPromote RPNI_PROMOTE]
