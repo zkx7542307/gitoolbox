@@ -1,11 +1,12 @@
 #sidebar UserGuideBar
 
-=== EDSM_Count ====
-rpni intro goes here
-=== syntax ===
-syntax of rpni...
-=== Description ===
-description of rpni..
-=== Examples ===
-some examples
-=== See Also ===
+<font color='FF5B00'><h2> EDSM_Count </h2></font>
+EDSM Count
+<font color='B80028'><h2> syntax </h2></font>
+score = EDSM_Count( dfa, positive, negative)
+<font color='B80028'><h2> Description </h2></font>
+After each merge we use EDSM_Count to caculate the score for a specific <br>
+merge. If a negative sample is accpceted or a positive sample is rejected <br>
+then the score goes infinitely.
+<font color='B80028'><h2> See Also </h2></font>
+[EDSM EDSM], [EDSMFold EDSM_FOLD], [EDSMMerge EDSM_MERGE], [EDSMPromote EDSM_PROMOTE]
