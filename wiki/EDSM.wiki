@@ -1,11 +1,52 @@
 #sidebar UserGuideBar
 
-=== EDSM ====
+<font color='FF5B00'><h2> EDSM </h2></font>
 Evidence driven state merging 
-=== syntax ===
-syntax of rpni...
-=== Description ===
-description of rpni..
-=== Examples ===
-some examples
-=== See Also ===
+<font color='B80028'><h2> syntax </h2></font>
+dfa = EDSM(positive, negative)
+<font color='B80028'><h2> Description </h2></font>
+EDSM starts from creating PTA according to positive samples. Initialize RED state set <br>
+and BLUE state set as following: <br>
+1. set start state as RED state and add it to RED set. <br>
+2. add all the successors of start state to BLUE set. <br>
+After initialization, EDSM starts to merge blue and red states pairwise. After each Merge, <br>
+we caculate the score of the merged DFA by [EDSMCount EDSM_Count] Select the merge <br> 
+with highest score as the optimal merge, if there's no merge possible, then promote current<br>
+blue state until there's no BLUE state for Merge.
+<font color='B80028'><h2> Example </h2></font>
+{{{
+>> EDSM(positive, negative)
+      Bulding PTA....
+      Running EDSM on PTA....
+
+      dfa = 
+
+      DFA
+
+      Properties:
+       FiniteSetOfStates: [1 2 3 4 5 6 7 8 9 10]
+               Alphabets: {'a'  'b'}
+        TransitionMatrix: [10x2 double]
+            InitialState: 1
+       FinalAcceptStates: [2 7 9 10]
+       FinalRejectStates: []
+                  RED: 1
+                  BLUE: [2 3]
+      ...
+      ...
+     ans = 
+
+     DFA
+
+     Properties:
+       FiniteSetOfStates: [1 2 3 4 5 6 7 8 9 10]
+               Alphabets: {'a'  'b'}
+        TransitionMatrix: [10x2 double]
+            InitialState: 1
+       FinalAcceptStates: [2 7 9 10]
+       FinalRejectStates: [5 1]
+                     RED: [1 2 5]
+                     BLUE: [1x0 double]
+}}}
+<font color='B80028'><h2> See Also </h2></font>
+[EDSMCount EDSM_Count], [EDSMFold EDSM_FOLD], [EDSMMerge EDSM_MERGE], [EDSMPromote EDSM_PROMOTE]
