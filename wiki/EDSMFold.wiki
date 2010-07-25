@@ -1,11 +1,3 @@
 #sidebar UserGuideBar
 
-=== EDSM_FOLD ====
-rpni intro goes here
-=== syntax ===
-syntax of rpni...
-=== Description ===
-description of rpni..
-=== Examples ===
-some examples
-=== See Also ===
+See [RPNIFold RPNI_Fold]
