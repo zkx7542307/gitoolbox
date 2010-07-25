@@ -1,11 +1,3 @@
 #sidebar UserGuideBar
 
-=== EDSM_PROMOTE ====
-rpni intro goes here
-=== syntax ===
-syntax of rpni...
-=== Description ===
-description of rpni..
-=== Examples ===
-some examples
-=== See Also ===
+_The same as RPNI Promote method. Please see [RPNIPromote RPNI_Promote] for detail._
