@@ -2,9 +2,9 @@
 #sidebar UserGuideBar
 
 = Introduction =
-The RPNI is a state-merging algorithm in grammatical inference. It uses two labels 
-for the states in the automaton: Red states and Blue states. After a series of merges 
-between the red states and blue states, promoting the states (e.g., blue to red ), the
+The RPNI is a state-merging algorithm in grammatical inference. It uses two labels <br>
+for the states in the automaton: Red states and Blue states. After a series of merges <br>
+between the red states and blue states, promoting the states (e.g., blue to red ), the <br>
 target DFA is produced. For the details of RPNI please consult chapter 12 of [Documentation#Reference Colin's Book].
 
 = Function List =
