@@ -1,11 +1,17 @@
 #sidebar UserGuideBar
 
 <font color='FF5B00'><h2> RPNI_MERGE </h2></font>
-rpni intro goes here
+RPNI Merge
 <font color='B80028'><h2> Syntax </h2></font>
-syntax of rpni...
+dfa = RPNI_MERGE(dfa, q1, q2)
 <font color='B80028'><h2> Description </h2></font>
-description of rpni..
-<font color='B80028'><h2> Example </h2></font>
-some examples
+This method will merge two states. <br>
+*input:* the _dfa_, state _q1_ and _q2_ to be merged, _q1_ is a member of RED and _q2_ is a member of BLUE
+*output:* the updated _dfa_ 
+First of all, we find out the precedessor _(q_f)_ of BLUE state _(q2)_, according to the principle of RPNI, this <br>
+precedessor is unique. And then set the transition _(q_f, a)_ as the RED state _(q1)_. After operations above, <br> 
+a tree rooted at _q2_ will be isolated from _dfa_. Then we call [RPNIFold RPNI_FOLD] to concatenate this tree onto<br> 
+current _dfa_.
+*RPNI_MERGE* returns an updated dfa.
 <font color='B80028'><h2> See Also </h2></font>
+[RPNI RPNI], [RPNICompatible RPNI_COMPATIBLE], [RPNIFold RPNI_FOLD], [RPNIPromote RPNI_PROMOTE]
