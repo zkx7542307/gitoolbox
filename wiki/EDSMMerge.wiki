@@ -1,11 +1,3 @@
 #sidebar UserGuideBar
 
-=== EDSM_MERGE ====
-rpni intro goes here
-=== syntax ===
-syntax of rpni...
-=== Description ===
-description of rpni..
-=== Examples ===
-some examples
-=== See Also ===
+_The same as RPNI Merge method. Please see [RPNIMerge RPNI_Merge] for detail._
