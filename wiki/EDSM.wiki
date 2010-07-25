@@ -15,6 +15,7 @@ with highest score as the optimal merge, if there's no merge possible, then prom
 blue state until there's no BLUE state for Merge.
 <font color='B80028'><h2> Example </h2></font>
 {{{
+>> [train, group, positive, negative] = ReadSamples('Data/input3.txt')
 >> EDSM(positive, negative)
       Bulding PTA....
       Running EDSM on PTA....
