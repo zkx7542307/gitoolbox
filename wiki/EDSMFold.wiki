@@ -1,3 +1,3 @@
 #sidebar UserGuideBar
 
-See [RPNIFold RPNI_Fold]
+_The same as RPNI Fold method. Please see [RPNIFold RPNI_Fold] for detail._
