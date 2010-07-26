@@ -1,11 +1,44 @@
 #sidebar UserGuideBar
 
-=== KBuilder ====
-rpni intro goes here
-=== syntax ===
-syntax of rpni...
-=== Description ===
-description of rpni..
-=== Examples ===
-some examples
-=== See Also ===
+<font color='FF5B00'><h2> KBuilder </h2></font>
+Create K-testable language from samples
+<font color='B80028'><h2> syntax </h2></font>
+kset = KBuilder(filename, k)
+<font color='B80028'><h2> Description </h2></font>
+Read samples from file and convert it into a K-Testable language<br>
+*Input:* _filename_,the path of sample file;  _k_, the learning parameter k
+*Output:* return a K-testable language
+<font color='B80028'><h2> Example </h2></font>
+Snippet of File: _k1.txt_
+{{{
+0000000001
+000000001
+00000001
+0000001
+000001
+00000101
+0000010101
+00001
+0000101
+0001
+000101
+001
+00101
+}}}
+Run in command window:
+{{{
+>> kset = KBuilder('Data/k1.txt', 3)
+
+kset = 
+
+  KSET
+
+  Properties:
+    Alphabets: {'0'  '1'}
+         ISET: {'00'  '01'}
+         CSET: {'0'  '01'}
+         FSET: {'01'}
+         TSET: {'000'  '001'  '010'  '101'}
+}}}
+<font color='B80028'><h2> See Also </h2></font>
+[K2dfa K2dfa], [KSET KSET]
