@@ -9,6 +9,24 @@ This function reads samples from file and return a DFA by k-testable language <b
 *Input:* _filename_, The path of sample file;  _k_, the learning parameter k; <br>
 *Output:* Return a DFA <br>
 <font color='B80028'><h2> Example </h2></font>
+Snippet of _File: k1.txt_
+{{{
+...
+0000000001
+000000001
+00000001
+0000001
+000001
+00000101
+0000010101
+00001
+0000101
+0001
+000101
+001
+00101
+...
+}}}
 {{{
 >> K2dfa('Data/k1.txt', 3)
 
