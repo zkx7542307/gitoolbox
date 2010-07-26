@@ -3,11 +3,11 @@
 <font color='FF5B00'><h2> ReadSamples </h2></font>
 Create Positive and negative sets from samples
 <font color='B80028'><h2> syntax </h2></font>
-[training, group, positive_samples, negative_samples] = ReadSamples(file_name)
+(training, group, positive_samples, negative_samples) = ReadSamples(file_name)
 <font color='B80028'><h2> Description </h2></font>
 This function will load the sample as an input for the into a matlab array <br>
  * *input:* _file_name_ as an input it takes the file name
- * *output:* _[training, group, negative_samples, positive_samples]_
+ * *output:* _(training, group, negative_samples, positive_samples)_
  * *training:* This array contains all the training samples in the specified input file
  * *group:* This array contains the corresponding classes of training
  * *negative_samples:* This array contains all the negative samples of the training set
