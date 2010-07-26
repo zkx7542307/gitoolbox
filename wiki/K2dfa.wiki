@@ -27,6 +27,7 @@ Snippet of _File: k1.txt_
 00101
 ...
 }}}
+Run in command window:
 {{{
 >> K2dfa('Data/k1.txt', 3)
 
