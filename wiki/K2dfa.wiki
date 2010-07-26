@@ -1,11 +1,31 @@
 #sidebar UserGuideBar
 
-=== K2dfa ====
-rpni intro goes here
-=== syntax ===
-syntax of rpni...
-=== Description ===
-description of rpni..
-=== Examples ===
-some examples
-=== See Also ===
+<font color='FF5B00'><h2> K2dfa </h2></font>
+Convert K-testable language to automaton
+<font color='B80028'><h2> syntax </h2></font>
+dfa = K2dfa(filename, k)
+<font color='B80028'><h2> Description </h2></font>
+This function reads samples from file and return a DFA by k-testable language <br>
+*Input:* _filename_, The path of sample file;  _k_, the learning parameter k; <br>
+*Output:* Return a DFA <br>
+<font color='B80028'><h2> Example </h2></font>
+{{{
+>> K2dfa('Data/k1.txt', 3)
+
+ans = 
+
+  DFA
+
+  Properties:
+    FiniteSetOfStates: [1 2 3 4 5]
+            Alphabets: {'0'  '1'}
+     TransitionMatrix: [5x2 double]
+         InitialState: 1
+    FinalAcceptStates: [4 2]
+    FinalRejectStates: []
+                  RED: []
+                 BLUE: []
+
+}}}
+<font color='B80028'><h2> See Also </h2></font>
+[K2dfa  K2dfa], [KSET KSET], [KBuilder KBuilder]
