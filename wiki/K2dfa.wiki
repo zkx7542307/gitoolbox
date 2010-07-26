@@ -47,4 +47,4 @@ ans =
 
 }}}
 <font color='B80028'><h2> See Also </h2></font>
-[K2dfa  K2dfa], [KSET KSET], [KBuilder KBuilder]
+[KSET KSET], [KBuilder KBuilder]
