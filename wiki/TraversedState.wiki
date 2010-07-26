@@ -7,7 +7,6 @@ x = TraversedState(string_value, dfa)
 <font color='B80028'><h2> Description </h2></font>
 This function checks wheather a given DFA accepts a string or not <br>
  * *Input:* _'string_value'_  which is an negative sample in our case,  _'dfa'_ defines a DFA
- * *Output:* if returns non-zero, then it's the finally transitioned state of this string 
-  if returns 0, that means string is rejected
+ * *Output:* The finally transitioned state of this string  or zero when string is rejected.
 <font color='B80028'><h2> See Also </h2></font>
 [DFA DFA], [BuildPTA Build_PTA], [ReadSamples ReadSamples]
