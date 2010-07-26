@@ -14,6 +14,17 @@ After each Merge, we examine the new merged DFA if it accepts any negative sampl
  * if it does, abandon such DFA and promote currently manipulated BLUE state and continue another Merge.
  * if it does not accpet any negative sample, update DFA and add all the red states' successors which are not BLUE states to BLUE set. Until there's no BLUE state for Merge.
 <font color='B80028'><h2> Example </h2></font>
+Snippet in File: _input3.txt_
+{{{
+6 2
+1 1 a
+1 2 a a a
+1 3 b b a
+1 4 a b a b
+0 2 a b
+0 2 b b
+}}}
+Run in command window:
 {{{
 [training, group, positive, negative] = ReadSamples('Data/input3.txt');
 dfa = RPNI(positive, negative);
