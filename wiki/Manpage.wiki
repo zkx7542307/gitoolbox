@@ -9,9 +9,9 @@ grammatical inference and of cause any intention to join us is warmly welcome.
 
 == Preliminary ==
 In order to use the toolbox, you need at least a legal copy of Matlab, you can get more information 
-from [http://www.mathworks.com/products/matlab/ here]. Since we presume that users who're about
-to use our toolbox already have some basic knowledge of grammatical inference, so we're not going to 
-spend time on giving any theoretical tutorial. 
+from [http://www.mathworks.com/products/matlab/ here] or you can also download [http://www.gnu.org/software/octave/ Octave]. 
+Since we presume that users who're about to use our toolbox already have some basic knowledge of grammatical
+inference, so we're not going to spend time on giving any theoretical tutorial.
 === Data Structure of DFA ===
 {{{
      A DFA contains 6 sets:
