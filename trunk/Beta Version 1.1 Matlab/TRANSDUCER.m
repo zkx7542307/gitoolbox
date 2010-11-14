@@ -22,35 +22,36 @@
 % 
 % -------------------------------------------------
 % [Description]
-% Here defines the data structure of Deterministic Finite Automaton (DFA).
+% Here defines the data structure of Transducer (DFA).
 
-classdef DFA
-    % This class deinfes the DFA structure
+
+classdef TRANSDUCER
+   
     properties
-        FiniteSetOfStates   % FiniteSetOfStates is the set of finite states denoted as Q
-        Alphabets   % The set of alphabets
-        TransitionMatrix  % The state transition matrix. Entry value 0 means there's no transition possible
-        InitialState   % The set of initial states
-        FinalAcceptStates   % The set of final accepted states
-        FinalRejectStates  % The rejected states
-        RED % The set of all the red states
-        BLUE % The set of all the blue states
+        FiniteSetOfStates      % A set of states
+        InAlphabets            % A set of input alphabets 
+        OuAlphabets            % A set of output alphabets  
+        InitialState           % initial state
+        StateTransition        % Transition from state q to q'
+        OutputTransduction     % Tranduction by input character
+        StateOutputs           % The output function at each state
+        RED                    % The red set
+        BLUE                   % The blue set
     end
     
     methods
-        % This constructor is needed in case of implmenting RPNI version of Colin de la Higuera,
-        % http://labh-curien.univ-st-etienne.fr/~cdlh/book/
-        % Constructor
-       function obj = DFA(q, a, tm, i, fa, fr, red, blue)
+        function obj = TRANSDUCER(q, ia, oa, i, st, ot, so, red, blue)
             obj.FiniteSetOfStates = q;
-            obj.Alphabets = a;
-            obj.TransitionMatrix = tm;
+            obj.InAlphabets = ia;
+            obj.OuAlphabets = oa;
             obj.InitialState = i;
-            obj.FinalAcceptStates = fa;
-            obj.FinalRejectStates = fr;  
+            obj.StateTransition = st;
+            obj.OutputTransduction = ot;
+            obj.StateOutputs = so;
             obj.RED = red;
             obj.BLUE = blue;
        end
     end
+    
 end
 

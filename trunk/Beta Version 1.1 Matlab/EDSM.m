@@ -36,7 +36,6 @@
 % TraversedState, ReadSamples
 
 function dfa = EDSM(positive, negative)
-
     display('Bulding PTA....');
     dfa = BUILD_PTA(positive);
     

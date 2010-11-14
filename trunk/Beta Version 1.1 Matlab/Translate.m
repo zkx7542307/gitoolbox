@@ -21,14 +21,38 @@
 % warranty of fitness for a particular purpose is offered. The 
 % user is advised to test the source code thoroughly before relying
 % on it. The user must assume the entire risk of using the source code.
-% ------------------------
-% Auxilary function, returns the state 'q' after transition from state
-% 'q_u'
-% through the alphabet a
+% 
+% -----------------
+% This method is used to translate a string to another string by means of
+% a Transducer.
+% Input: TRANSDUCER T, string w
+% Output: translated string f or false when translating fails.
 
-function q = GetTransitionState(dfa, q_u, a)
-    col_position =  find(strcmp(dfa.Alphabets, a));
-    row_position = find(dfa.FiniteSetOfStates == q_u);
-    q = dfa.TransitionMatrix(row_position, col_position);
-    
+function output = Translate(T, w)
+%TRANSLATE Summary of this function goes here
+%   Detailed explanation goes here
+    output = '';
+    q = 1;
+    for i = 1:length(w)
+        a = find(strcmp(T.InAlphabets, w(i)));
+        if isempty(a)
+            output = 0;
+            return;
+        else
+            if T.StateTransition(q, a) ~= 0
+                output = strcat(output, T.OutputTransduction{q, a});
+                q = T.StateTransition(q, a);
+            else
+                output = 0;
+                return;
+            end
+        end
+    end
+    if strcmp(T.StateOutputs{q}, '*')
+        output = 0;
+    else
+        output = strcat(output, T.StateOutputs{q});
+    end
+
 end
+
