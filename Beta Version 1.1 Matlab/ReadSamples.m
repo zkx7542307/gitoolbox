@@ -32,17 +32,11 @@
 % ---------------------------------
 
 function [training, group, positive_samples, negative_samples] = ReadSamples(file_name)
-
     % open file
-
-    % fid = fopen('/home/hasan/path.txt','r');     % 'rt' means "read text"
-
     fid = fopen(file_name,'r');     % 'rt' means "read text"
 
     if (fid < 0)
-
         error('could not open file');
-
     end;
 
     group = [];
@@ -65,11 +59,9 @@ function [training, group, positive_samples, negative_samples] = ReadSamples(fil
         number_of_empty_space = 0;
         label = '';
         for k = 1:length(s)
-
             if(number_of_empty_space ~= 1)            
                     label = strcat(label, s(k));
             end
-
 
             if strcmp(s(k),' ')
                number_of_empty_space = number_of_empty_space + 1;

@@ -21,14 +21,24 @@
 % warranty of fitness for a particular purpose is offered. The 
 % user is advised to test the source code thoroughly before relying
 % on it. The user must assume the entire risk of using the source code.
-% ------------------------
-% Auxilary function, returns the state 'q' after transition from state
-% 'q_u'
-% through the alphabet a
+% 
+% -----------------
+% This method checks if two states outputs are identical or one of them is
+% unknown, if not returns false.
 
-function q = GetTransitionState(dfa, q_u, a)
-    col_position =  find(strcmp(dfa.Alphabets, a));
-    row_position = find(dfa.FiniteSetOfStates == q_u);
-    q = dfa.TransitionMatrix(row_position, col_position);
-    
+function str = OSTIA_Outputs(output1, output2)
+%OSTIA_OUTPUTS Summary of this function goes here
+%   Detailed explanation goes here
+    if strcmp(output1, '*')
+        str = output2;
+    else if strcmp(output2, '*')
+            str = output1;
+        else if strcmp(output1, output2)
+                str = output1;
+            else
+                str = 0;
+            end
+        end
+    end
 end
+

@@ -22,35 +22,33 @@
 % 
 % -------------------------------------------------
 % [Description]
-% Here defines the data structure of Deterministic Finite Automaton (DFA).
+% Here defines the data structure of Deterministic Probability Finite Automaton (DPFA).
 
-classdef DFA
-    % This class deinfes the DFA structure
+classdef DPFA
+    % Here defines the data structure of DFFA
     properties
         FiniteSetOfStates   % FiniteSetOfStates is the set of finite states denoted as Q
         Alphabets   % The set of alphabets
-        TransitionMatrix  % The state transition matrix. Entry value 0 means there's no transition possible
-        InitialState   % The set of initial states
-        FinalAcceptStates   % The set of final accepted states
-        FinalRejectStates  % The rejected states
-        RED % The set of all the red states
-        BLUE % The set of all the blue states
+        InitialState  % The initial state
+        FinalStateProbability   % The probability set of final states
+        ProbabilityTransitionMatrix   % The transition matrix of probability
+        AssociateTransitionMatrix  % The associate transition matrix 
+        RED  % The set of Red states
+        BLUE  % The set of Blue states
     end
     
     methods
-        % This constructor is needed in case of implmenting RPNI version of Colin de la Higuera,
-        % http://labh-curien.univ-st-etienne.fr/~cdlh/book/
         % Constructor
-       function obj = DFA(q, a, tm, i, fa, fr, red, blue)
+        function obj = DPFA(q, a, i, fsp, ptm, atm, red, blue)
             obj.FiniteSetOfStates = q;
             obj.Alphabets = a;
-            obj.TransitionMatrix = tm;
             obj.InitialState = i;
-            obj.FinalAcceptStates = fa;
-            obj.FinalRejectStates = fr;  
+            obj.FinalStateProbability = fsp;
+            obj.ProbabilityTransitionMatrix = ptm;
+            obj.AssociateTransitionMatrix= atm;
             obj.RED = red;
             obj.BLUE = blue;
-       end
+        end
     end
 end
 

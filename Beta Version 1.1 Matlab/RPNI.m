@@ -1,4 +1,4 @@
-% Author: Hasan Ibne Akram, Huang Xiao
+% Authors: Hasan Ibne Akram, Huang Xiao
 % Munich University of Technology
 % Web: http://www.sec.in.tum.de/hasan-akram/
 % Email: hasan.akram@sec.in.tum.de
@@ -44,7 +44,7 @@ function dfa = RPNI(positive, negative)
     dfa = BUILD_PTA(positive);
     
     save('pta.mat', 'dfa');
-   
+    dfa.TransitionMatrix = sparse(dfa.TransitionMatrix);
     % adding the red states
     dfa.RED = [dfa.RED, dfa.FiniteSetOfStates(1)];
     
@@ -67,8 +67,13 @@ function dfa = RPNI(positive, negative)
         dfa.BLUE = [dfa.BLUE(2:length(dfa.BLUE))];
         promote = 1;
         for i = 1:length(dfa.RED)
+           display('start merge...')
            dfa_merged = RPNI_MERGE(dfa, dfa.RED(i), q_b);
-           if(RPNI_COMPATIBLE(dfa_merged, negative))             
+           display('end merge...');
+           display('start examine compatibility')
+           if(RPNI_COMPATIBLE(dfa_merged, negative)) 
+               % enter here only when all negative samples have neen rejected
+               % most time consuming block
                dfa = dfa_merged;
                dfa
                display('merge accepted')
@@ -80,7 +85,9 @@ function dfa = RPNI(positive, negative)
            end    
         end
         if (promote==1)
+            display('start promote')
                dfa = RPNI_PROMOTE(q_b, dfa);
+               display('end promote')
               % display('promoting:');
               % display(q_b);
         end 
