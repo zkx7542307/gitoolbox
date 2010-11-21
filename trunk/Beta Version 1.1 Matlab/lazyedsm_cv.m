@@ -36,7 +36,8 @@ function lazyedsm_cv(samplefile, resultfile, depth, folder)
         test_negative_set = negative(neg_start:neg_last);
         train_negative_set = negative;
         train_negative_set(neg_start:neg_last) = [];
-        dfa = LazyEDSM(train_positive_set, train_negative_set, depth);
+        %dfa = LazyEDSM(train_positive_set, train_negative_set, depth);
+        dfa = RPNI(train_positive_set, train_negative_set);
         for k = 1:length(test_positive_set)
             str = test_positive_set{k};
             if IsStringAccepted(str, dfa)
