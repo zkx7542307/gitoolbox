@@ -25,10 +25,10 @@
 % The lasy-EDSM algorithm
 % to-be added
 
-function dfa = LazyEDSM(positive, negative, depth)
+function dfa = LazyEDSM(sample, depth)
 %LASYEDSM Summary of this function goes here
 %   Detailed explanation goes here
-    %[training, group, positive, negative] = ReadSamples(sample);
+    [training, group, positive, negative] = ReadSamples(sample);
     dfa = BUILD_PTA(positive);
     % adding the red states
     dfa.RED = [dfa.RED, dfa.FiniteSetOfStates(1)];
@@ -69,6 +69,8 @@ function dfa = LazyEDSM(positive, negative, depth)
                 bs = s;
                 dfa_best = dfa2;
             end
+            d = 1;
+            dfa2 = dfa;
         end
         if ~atleastonemerge
             dfa.BLUE = sort(dfa.BLUE);
