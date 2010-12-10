@@ -1,0 +1,24 @@
+#summary Alergia Implementation Manpage.
+#sidebar UserGuideBar
+
+= Introduction =
+Alergia algorithm is another state-merging algorithm following the same <br>
+idea with [RPNI RPNI] but from the probabilistic view. Corresponding with <br>
+Deterministic Finite Automata, there's a term of Deterministic Probabilistic <br>
+Finite Automata ([DPFA DPFA]) and Deterministic Frequency Finite Automata ([DFFA DFFA]). <br> 
+In practice, we are dealing with frequency of samples most of time, but it is very <br> trivial to convert a DFFA to DPFA. Alergia is such a learning algorithm which is able <br>
+to learn a DFFA and its corresponding DPFA from a sample containing duplicate strings. <br>
+Check the function pages to view more details about the algorithm.
+
+= Function List =
+We've implemented following functions for Alergia:
+  * [DFFA DFFA]
+  * [DPFA DPFA]
+  * [Build_FPTA Build_FPTA]
+  * [Alergia Alergia]
+  * [AlergiaCompatible AlergiaCompatible]
+  * [AlergiaTest AlergiaTest]
+  * [AlergiaStochasticMerge AlergiaStochasticMerge]
+  * [AlergiaStochasticFold AlergiaStochasticFold]
+  * [dffa2dpfa dffa2dpfa]
+  * [FreqOfState FreqOfState]
