@@ -1,0 +1,119 @@
+#sidebar UserGuideBar
+
+<font color='FF5B00'><h2> Alergia </h2></font>
+The main function of algorithm Alergia.
+<font color='B80028'><h2> syntax </h2></font>
+[dffa, dpfa] = Alergia(filename, alpha)
+<font color='B80028'><h2> Description </h2></font>
+Alergia starts from creating FPTA according to samples. Initialize RED state set and <br>
+BLUE state set as following:
+ * set start state as RED state and add it to RED set.
+ * add all the successors of start state to BLUE set.
+After initialization, Alergia starts to extract each BLUE state and merge it for each RED state. <br>
+Only the state with a frequency larger than some threshold should be able to be merged. <br>
+If no merge is possible, promote currently manipulated BLUE state. You can see that this <br> algorithm is simply a variation of RPNI with the capacity to deal the probabilistic <br> problems. The main difference stands at the point of examining the compatibility of <br> a merge. 
+
+<font color='B80028'><h2> Example </h2></font>
+Snippet in File: _alergia_data.txt_
+{{{
+ba
+bbbb
+ba
+bbaba
+b
+bb
+
+
+
+
+bbba
+}}}
+Notice that samples can contain empty string. <br>
+Run in command window:
+{{{
+[dffa, dpfa] = Alergia('Data/alergia1.txt',0.05)
+
+Start building FPTA
+Running Alergia on FPTA....
+Currently no merge is possible, promote...
+Currently no merge is possible, promote...
+Merge accepted...
+
+q_r =
+
+     2
+
+
+q_b =
+
+    21
+
+Merge accepted...
+
+q_r =
+
+     2
+
+
+q_b =
+
+     3
+
+Merge accepted...
+
+q_r =
+
+    20
+
+
+q_b =
+
+    10
+
+Merge accepted...
+
+q_r =
+
+     1
+
+
+q_b =
+
+    46
+
+
+dffa = 
+
+  DFFA
+
+  Properties:
+            FiniteSetOfStates: [91x1 double]
+                    Alphabets: {'b'  'a'}
+        InitialStateFrequency: [91x1 double]
+          FinalStateFrequency: [91x1 double]
+    FrequencyTransitionMatrix: {[91x2 double]  [91x2 double]}
+    AssociateTransitionMatrix: [91x2 double]
+                          RED: [1 2 20]
+                         BLUE: [1x0 double]
+
+  Methods
+
+
+dpfa = 
+
+  DPFA
+
+  Properties:
+              FiniteSetOfStates: [91x1 double]
+                      Alphabets: {'b'  'a'}
+                   InitialState: 1
+          FinalStateProbability: [91x1 double]
+    ProbabilityTransitionMatrix: {[91x2 double]  [91x2 double]}
+      AssociateTransitionMatrix: [91x2 double]
+                            RED: [1 2 20]
+                           BLUE: [1x0 double]
+
+  Methods
+}}}
+<font color='B80028'><h2> See Also </h2></font>
+[RPNICompatible RPNI_COMPATIBLE], [RPNIFold RPNI_FOLD], [RPNIMerge RPNI_MERGE], [RPNIPromote RPNI_PROMOTE]
