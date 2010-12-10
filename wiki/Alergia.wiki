@@ -3,7 +3,7 @@
 <font color='FF5B00'><h2> Alergia </h2></font>
 The main function of algorithm Alergia.
 <font color='B80028'><h2> syntax </h2></font>
-'['dffa, dpfa']' = Alergia(filename, alpha)
+{{{[dffa, dpfa] = Alergia(filename, alpha)}}}
 <font color='B80028'><h2> Description </h2></font>
 Alergia starts from creating FPTA according to samples. Initialize RED state set and <br>
 BLUE state set as following:
