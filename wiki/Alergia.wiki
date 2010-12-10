@@ -116,4 +116,4 @@ dpfa =
   Methods
 }}}
 <font color='B80028'><h2> See Also </h2></font>
-[RPNICompatible RPNI_COMPATIBLE], [RPNIFold RPNI_FOLD], [RPNIMerge RPNI_MERGE], [RPNIPromote RPNI_PROMOTE]
+[AlergiaCompatible AlergiaCompatible],[AlergiaTest AlergiaTest],[AlergiaStochasticMerge AlergiaStochasticMerge],[AlergiaStochasticFold AlergiaStochasticFold],[dffa2dpfa dffa2dpfa],[FreqOfState FreqOfState]
