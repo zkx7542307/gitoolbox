@@ -5,6 +5,9 @@ Other methods in the package
 
 = Details = 
  * [DFA DFA] 
+ * [DFFA DFFA]
+ * [DPFA DPFA]
+ * [Build_FPTA Build_FPTA]
  * [BuildPTA Build_PTA]
  * [ReadSamples ReadSamples]
  * [TraversedState TraversedState]
