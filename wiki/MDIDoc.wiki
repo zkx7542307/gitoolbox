@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Minimum Divergence Inference (MDI) is another version of learning <br> probablistic definite finite automata (PDFA). The goal is to find balance  <br>between the gain in size and the loss in perplexity. So the only <br>difference with [Alergia Alergia] is that the merge is now happened <br>inside compatibility test and the score function is using <br>perplexity.
+Minimum Divergence Inference (MDI) is another version of learning <br> probablistic definite finite automata (PDFA). The goal is to find balance  <br>between the gain in size and the loss in perplexity. So the only <br>difference with [Alergia Alergia] is that the merge is now happened <br>inside compatibility test and the score function is using perplexity.
 
 = Function List =
 We have implemented following functions for MDI algorithm.
