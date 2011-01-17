@@ -11,4 +11,4 @@ Input: transition matrix of an automata <br>
 Output: size of the automata <br>
 
 <font color='B80028'><h2> See Also </h2></font>
-[MDIScore MDIScore],[MDI MDI],[MDIStochasticFold MDIStochasticFold],[MDIStochasticMerge MDIStochasticMerge],[MDICompatible MDICompatible],[ProbabilityOfString ProbabilityOfString]
+[MDIScore MDIScore],[MDI MDI],[MDIStochasticFold MDIStochasticFold],[MDIStochasticMerege MDIStochasticMerge],[MDICompatible MDICompatible],[ProbabilityOfString ProbabilityOfString]
