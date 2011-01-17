@@ -10,4 +10,4 @@ score = MDIScore(sample, dffa)
 MDIScore computes a score value for compatibility test using perplexity.<br>
 Notice that the sample should be a sorted sample from Build_FPTA <br>
 <font color='B80028'><h2> See Also </h2></font>
-[MDICompatible MDICompatible],[MDI MDI],[MDIStochasticMerge MDIStochasticMerge],[MDIStochasticFold MDIStochasticFold],[AutomataSize AutomataSize],[ProbabilityOfString ProbabilityOfString]
+[MDICompatible MDICompatible],[MDI MDI],[MDIStochasticMerege MDIStochasticMerge],[MDIStochasticFold MDIStochasticFold],[AutomataSize AutomataSize],[ProbabilityOfString ProbabilityOfString]
