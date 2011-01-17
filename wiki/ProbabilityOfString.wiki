@@ -12,4 +12,4 @@ Input: A DPFA, a string <br>
 Output: the probability of a string <br>
 
 <font color='B80028'><h2> See Also </h2></font>
-[MDIScore MDIScore],[MDI MDI],[MDIStochasticFold MDIStochasticFold],[MDIStochasticMerge MDIStochasticMerge],[MDICompatible MDICompatible],[AutomataSize AutomataSize]
+[MDIScore MDIScore],[MDI MDI],[MDIStochasticFold MDIStochasticFold],[MDIStochasticMerege MDIStochasticMerge],[MDICompatible MDICompatible],[AutomataSize AutomataSize]
