@@ -10,4 +10,4 @@ To see if two states are compatible for merge. <br>
 Input: A DFFA, two states qu, qv, sample set and a parameter alpha<br>
 Output: A Boolean indicating if qu and qv are compatible, the merged dffa.<br>
 <font color='B80028'><h2> See Also </h2></font>
-[MDI MDI],[MDIScore MDIScore],[MDIStochasticMerge MDIStochasticMerge],[MDIStochasticFold MDIStochasticFold],[AutomataSize AutomataSize], [ProbabilityOfString ProbabilityOfString]
+[MDI MDI],[MDIScore MDIScore],[MDIStochasticMerege MDIStochasticMerge],[MDIStochasticFold MDIStochasticFold],[AutomataSize AutomataSize], [ProbabilityOfString ProbabilityOfString]
