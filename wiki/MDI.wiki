@@ -1,0 +1,58 @@
+#sidebar UserGuideBar
+
+<font color='FF5B00'><h2> MDI </h2></font>
+The main function of algorithm MDI.
+<font color='B80028'><h2> syntax </h2></font>
+{{{[dffa, dpfa] = MDI(filename, alpha)}}}
+<font color='B80028'><h2> Description </h2></font>
+The main MDI function, learning a PDFA from samples.<br>
+The only difference between alergia and MDI is the compatibility tesing. 
+
+<font color='B80028'><h2> Example </h2></font>
+Snippet in File: _alergia_data.txt_
+{{{
+ba
+bbbb
+ba
+bbaba
+b
+bb
+
+
+
+
+bbba
+}}}
+Notice that samples can contain empty string. <br>
+Run in command window:
+{{{
+[dffa, dpfa] = MDI('Data/alergia1.txt',0.5)
+
+Start building FPTA
+Running MDI on FPTA....
+Currently no merge is possible, promote...
+Currently no merge is possible, promote...
+Currently no merge is possible, promote...
+Currently no merge is possible, promote...
+Currently no merge is possible, promote...
+Currently no merge is possible, promote...
+Currently no merge is possible, promote...
+
+ans = 
+
+  DFFA
+
+  Properties:
+            FiniteSetOfStates: [91x1 double]
+                    Alphabets: {'b'  'a'}
+        InitialStateFrequency: [91x1 double]
+          FinalStateFrequency: [91x1 double]
+    FrequencyTransitionMatrix: {[91x2 double]  [91x2 double]}
+    AssociateTransitionMatrix: [91x2 double]
+                          RED: [1 2 20 21 46 54 55 64]
+                         BLUE: [1x0 double]
+
+  Methods
+}}}
+<font color='B80028'><h2> See Also </h2></font>
+[MDICompatible MDICompatible],[MDIScore MDIScore],[MDIStochasticMerge MDIStochasticMerge],[MDIStochasticFold MDIStochasticFold],[AutomataSize AutomataSize],[ProbabilityOfString]
