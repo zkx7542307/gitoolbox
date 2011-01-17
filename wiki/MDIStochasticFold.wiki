@@ -11,4 +11,4 @@ DFFA, this method recursively folds the subtree into DFFA <br>
 Input: A DFFA which contains an seperated subtree rooted on a blue state, Red state qr, and Blue state qb.    <br>  
 Output: A updated Deterministic Frequency Finite Automaton (DFFA)
 <font color='B80028'><h2> See Also </h2></font>
-[MDIScore MDIScore],[MDI MDI],[MDIStochasticMerge MDIStochasticMerge],[MDICompatible MDICompatible],[AutomataSize AutomataSize],[ProbabilityOfString ProbabilityOfString]
+[MDIScore MDIScore],[MDI MDI],[MDIStochasticMerege MDIStochasticMerge],[MDICompatible MDICompatible],[AutomataSize AutomataSize],[ProbabilityOfString ProbabilityOfString]
