@@ -4,7 +4,7 @@
 Compute the size of an automata according to its valid states.
 
 <font color='B80028'><h2> syntax </h2></font>
-size = AutomataSize( TransitionMatrix )
+{{{size = AutomataSize( TransitionMatrix )}}}
 <font color='B80028'><h2> Description </h2></font>
 AutomataSize outputs the size of an automata according to the states.<br>
 Input: transition matrix of an automata <br>
