@@ -55,4 +55,4 @@ ans =
   Methods
 }}}
 <font color='B80028'><h2> See Also </h2></font>
-[MDICompatible MDICompatible],[MDIScore MDIScore],[MDIStochasticMerge MDIStochasticMerge],[MDIStochasticFold MDIStochasticFold],[AutomataSize AutomataSize],[ProbabilityOfString]
+[MDICompatible MDICompatible],[MDIScore MDIScore],[MDIStochasticMerege MDIStochasticMerge],[MDIStochasticFold MDIStochasticFold],[AutomataSize AutomataSize],[ProbabilityOfString]
