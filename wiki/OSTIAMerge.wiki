@@ -1,0 +1,12 @@
+#sidebar UserGuideBar
+
+<font color='FF5B00'><h2> OSTIA_Merge </h2></font>
+Merge function for OSTIA
+<font color='B80028'><h2> Syntax </h2></font>
+T = OSTIA_Merge(T, qr, qb)
+<font color='B80028'><h2> Description </h2></font>
+This method will merge two states<br>
+Input: the Transducer T, state q1 and q2 to be merged, q1 is a member of RED and q2 is a member of BLUE <br>
+Output:  the updated Transducer T <br>
+<font color='B80028'><h2> See Also </h2></font>
+[OSTIA OSTIA],[OSTIAFold OSTIA_Fold],[OSTIAOutputs OSTIA_Outputs],[OSTIAPushBack OSTIA_PushBack],[Build_PTT Build_PTT],[LCP LongestCommonPrefix],[OnwardPTT Onward_PTT]
