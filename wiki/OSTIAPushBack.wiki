@@ -9,7 +9,7 @@ This method can be thought of a symmetrical operation as Onward_PTT. It <br>
 pushes a portion of outputs forward to make up identical states so that <br>
 they are able to merge. <br>
 Input: TRANSDUCER T, two states q, p, alphabet index a <br>
-Output: T -> New transducer setting u as the common outputs for both q and p <br>
-    flag -> Indicator if push back is succeed <br>
+Output: T -> New transducer setting u as the common outputs for both q and p, flag -> Indicator if push back is succeed <br>
+   
 <font color='B80028'><h2> See Also </h2></font>
 [OSTIAMerge OSTIA_Merge],[OSTIA OSTIA],[OSTIAFold OSTIA_Fold],[OSTIAOutputs OSTIA_Outputs],[Build_PTT Build_PTT],[LCP LongestCommonPrefix],[OnwardPTT Onward_PTT]
