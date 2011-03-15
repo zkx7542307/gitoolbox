@@ -1,0 +1,12 @@
+#sidebar UserGuideBar
+
+<font color='FF5B00'><h2> OSTIA_Outputs </h2></font>
+Output identity for two strings
+<font color='B80028'><h2> Syntax </h2></font>
+str = OSTIA_Outputs(output1, output2)
+<font color='B80028'><h2> Description </h2></font>
+This method checks if two states outputs are identical or one of them is unknown, if not returns false.
+Input: Two strings output1 and output2 <br>
+Output:  The common string or 0 if they are not identical <br>
+<font color='B80028'><h2> See Also </h2></font>
+[OSTIAMerge OSTIA_Merge],[OSTIA OSTIA],[OSTIAFold OSTIA_Fold],[OSTIAPushBack OSTIA_PushBack],[Build_PTT Build_PTT],[LCP LongestCommonPrefix],[OnwardPTT Onward_PTT]
