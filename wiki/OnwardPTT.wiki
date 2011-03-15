@@ -1,0 +1,13 @@
+#sidebar UserGuideBar
+
+<font color='FF5B00'><h2> Onward_PTT </h2></font>
+Make a normal PTT onward
+<font color='B80028'><h2> Syntax </h2></font>
+ptt = BUILD_PTT(sample_file)
+<font color='B80028'><h2> Description </h2></font>
+Start from a normal PTT and make it onward <br>
+Onward means that the transduction should happen as near as the root <br>
+Input: PTT Prefix Tree Transducer, q The state where onward will be applied  <br>
+Output: An onward PTT <br>
+<font color='B80028'><h2> See Also </h2></font>
+[OSTIA OSTIA],[OSTIAMerge OSTIA_Merge],[OSTIAFold OSTIA_Fold],[OSTIAOutputs OSTIA_Outputs],[OSTIAPushBack OSTIA_PushBack],[BuildPTT Build_PTT],[LCP LongestCommonPrefix]
