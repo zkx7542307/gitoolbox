@@ -10,4 +10,4 @@ Onward means that the transduction should happen as near as the root <br>
 Input: PTT Prefix Tree Transducer, q The state where onward will be applied  <br>
 Output: An onward PTT <br>
 <font color='B80028'><h2> See Also </h2></font>
-[OSTIA OSTIA],[OSTIAMerge OSTIA_Merge],[OSTIAFold OSTIA_Fold],[OSTIAOutputs OSTIA_Outputs],[OSTIAPushBack OSTIA_PushBack],[BuildPTT Build_PTT],[LCP LongestCommonPrefix]
+[OSTIA OSTIA],[OSTIAMerge OSTIA_Merge],[OSTIAFold OSTIA_Fold],[OSTIAOutputs OSTIA_Outputs],[OSTIAPushBack OSTIA_PushBack],[Build_PTT Build_PTT],[LCP LongestCommonPrefix]
