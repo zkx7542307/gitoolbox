@@ -1,0 +1,12 @@
+#sidebar UserGuideBar
+
+<font color='FF5B00'><h2> OSTIA_Fold </h2></font>
+Folding function for OSTIA
+<font color='B80028'><h2> Syntax </h2></font>
+T = OSTIA_Fold(T, qr, qb)
+<font color='B80028'><h2> Description </h2></font>
+Similar as other state merging algorithm, this method folds a tree rooted at a blue state to the rest of Transducer. <br>
+Input: Transducer T, red state qr, blue state qb <br>
+Output: Updated Transducer T into which qb has been folded. <br>
+<font color='B80028'><h2> See Also </h2></font>
+[OSTIAMerge OSTIA_Merge],[OSTIA OSTIA],[OSTIAOutputs OSTIA_Outputs],[OSTIAPushBack OSTIA_PushBack],[Build_PTT Build_PTT],[LCP LongestCommonPrefix],[OnwardPTT Onward_PTT]
