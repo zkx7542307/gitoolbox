@@ -44,6 +44,68 @@ inference, so we're not going to spend time on giving any theoretical tutorial.
         Allowed segments
 }}}
 
+=== Data Structure of DFFA ===
+{{{
+    FiniteSetOfStates  
+           The set of finite states denoted as Q
+    Alphabets   
+           The set of alphabets
+   InitialStateFrequency
+           The frequency set of initial states
+   FinalStateFrequency 
+           The frequency set of final states
+   FrequencyTransitionMatrix
+           The transition matrix of frequency
+   AssociateTransitionMatrix
+           The associate transition matrix 
+   RED
+           The set of Red states
+   BLUE 
+           The set of Blue states
+}}}
+
+=== Data Structure of DPFA===
+{{{
+   FiniteSetOfStates
+           The set of finite states denoted as Q
+   Alphabets
+           The set of alphabets
+   InitialState
+           The initial state
+   FinalStateProbability
+           The probability set of final states
+   ProbabilityTransitionMatrix
+           The transition matrix of probability
+   AssociateTransitionMatrix
+           The associate transition matrix 
+   RED 
+           The set of Red states
+   BLUE
+           The set of Blue states
+}}}
+
+=== Data Structure of TRANSDUCER ===
+{{{
+   FiniteSetOfStates
+           A set of states
+   InAlphabets
+           A set of input alphabets 
+   OuAlphabets
+           A set of output alphabets  
+   InitialState
+           Initial state
+   StateTransition       
+           Transition from state q to q'
+   OutputTransduction    
+           Tranduction by input character
+   StateOutputs        
+           The output function at each state
+   RED
+           The red set
+   BLUE
+           The blue set
+}}}
+
 === Data Input Format ===
 In order to make your program runnable, you should follow the format of input sample.
  * For *[RPNIDoc RPNI]* and *[EDSMDoc EDSM]* which require both positive and negative sample,
