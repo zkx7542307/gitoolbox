@@ -3,7 +3,7 @@
 <font color='FF5B00'><h2> OSTIA </h2></font>
 OSTIA main function
 <font color='B80028'><h2> Syntax </h2></font>
-ptt = BUILD_PTT(sample_file)
+T = OSTIA(sample_file)
 <font color='B80028'><h2> Description </h2></font>
 OSTIA stands for Onward Subsequential Transducer Inference Algorithm <br>
 Given a dataset comprising pairs of input and output strings, OSTIA is able to learn a transducer from dataset in polynomial time. <br>
@@ -11,4 +11,4 @@ OSTIA starts with building a prefix tree transducer and make an onward operation
 Input: Sample file name <br>
 Output:  A transducer T <br>
 <font color='B80028'><h2> See Also </h2></font>
-[OSTIAMerge OSTIA_Merge],[OSTIAFold OSTIA_Fold],[OSTIAOutputs OSTIA_Outputs],[OSTIAPushBack OSTIA_PushBack],[Build_PTT Build_PTT],[LCP LongestCommonPrefix],[OnwardPTT, Onward_PTT]
+[OSTIAMerge OSTIA_Merge],[OSTIAFold OSTIA_Fold],[OSTIAOutputs OSTIA_Outputs],[OSTIAPushBack OSTIA_PushBack],[Build_PTT Build_PTT],[LCP LongestCommonPrefix],[OnwardPTT Onward_PTT]
