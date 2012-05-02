@@ -16,5 +16,5 @@ We've implemented some algorithms both in Matlab and Octave. In order to use the
  * *July.13.2010*
   * Currently we published the beta version 1.1 both for Matlab and Octave
 = Reference =
- * Akram, Hasan Ibne, Colin de la Higuera, Huang Xiao, and Claudia Eckert. *Grammatical Inference Algorithms in MATLAB*. In ICGI 2010: Proceedings of the 10th International Colloquium on Grammatical Inference, Valencia, Spain, 2010. Springer-Verlag. 
+ * Akram, Hasan Ibne, Colin de la Higuera, Huang Xiao, and Claudia Eckert. [http://www.sec.in.tum.de/assets/Uploads/MATLABGILib2.pdf *Grammatical Inference Algorithms in MATLAB*]. In ICGI 2010: Proceedings of the 10th International Colloquium on Grammatical Inference, Valencia, Spain, 2010. Springer-Verlag. 
  * de la Higuera, C.: *Grammatical Inference: Learning Automata and Grammars*. Cambridge University Press (2010)
